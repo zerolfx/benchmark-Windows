@@ -1,0 +1,1 @@
+docker build -m 4G -t zerolfx/benchmark .

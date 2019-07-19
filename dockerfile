@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/dotnet/framework/sdk:4.8-windowsservercore-ltsc2016
+FROM mcr.microsoft.com/dotnet/framework/sdk:4.8-windowsservercore-ltsc2019
 
 SHELL ["powershell.exe", "-Command"]
 
@@ -10,6 +10,7 @@ RUN [Environment]::SetEnvironmentVariable( \
     '"Path"', $Env:Path + ';C:\\tools\\cygwin\\bin\\', [System.EnvironmentVariableTarget]::Machine)
 
 COPY src/ /src/
+WORKDIR /src/
 
 
 # RUN choco install -y rust cygwin
