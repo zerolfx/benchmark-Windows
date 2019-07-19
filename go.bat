@@ -1,0 +1,1 @@
+docker run -m 4G -it --rm -v --cpus=8 zerolfx/benchmark powershell
