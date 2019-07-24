@@ -12,6 +12,8 @@ RUN [Environment]::SetEnvironmentVariable( \
 COPY src/ /src/
 WORKDIR /src/
 
+ENTRYPOINT [ "powershell" ]
+
 
 # RUN choco install -y rust cygwin
 # RUN cargo install hyperfine
