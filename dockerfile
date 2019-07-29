@@ -3,7 +3,7 @@ FROM mcr.microsoft.com/dotnet/framework/sdk:4.8-windowsservercore-ltsc2019
 SHELL ["powershell.exe", "-Command"]
 
 RUN Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
-RUN choco install -y cygwin cyg-get
+RUN choco install -y cygwin cyg-get python3
 RUN cyg-get install gcc-core
 
 RUN [Environment]::SetEnvironmentVariable( \
