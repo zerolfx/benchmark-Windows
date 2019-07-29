@@ -1,5 +1,5 @@
-Sample Intel(R) LINPACK data file (lininput_xeon32)
-Intel(R) LINPACK data
+Shared-memory version of Intel(R) Distribution for LINPACK* Benchmark. *Other names and brands may be claimed as the property of others.
+Sample data file lininput_xeon32.
 9                                                  # number of tests
 15000 14000 13000 12000 11000 10000 8000 6000 1000 # problem sizes
 15000 14008 13000 12008 11000 10008 8008 6008 1000 # leading dimensions
